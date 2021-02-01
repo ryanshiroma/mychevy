@@ -331,7 +331,6 @@ Location: %s
         session = get_url("session", self.country).format(car.vin, car.onstar, now, KEY)
         res = self.session.get(
             session,
-            headers=headers,
             cookies=self.cookies,
             allow_redirects=False,
             timeout=TIMEOUT,
